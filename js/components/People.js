@@ -6,9 +6,10 @@ export default function People(people) {
             .map(person => {
                 return `
             <li>
-            <h3>${person.name}</h3>
+            <h3 class='person-name'>${person.name}</h3>
             <p>Hair Color: ${person.hair_color}</p>
             <p>Birth Year: ${person.birth_year}</p>
+            <input type='hidden' id='personId' value='${person.url}'/>
             </li>
         `
 
@@ -17,3 +18,4 @@ export default function People(people) {
     </ul>
     `;
 }
+

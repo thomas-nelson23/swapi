@@ -1,5 +1,4 @@
 export default function Films(films) {
-    console.log(films.results)
     return `
     <h1>Star Wars Films</h1>
     <ul>
